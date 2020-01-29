@@ -14,7 +14,7 @@ function Set(elements) {
     // 1개의 element를 입력 받고, set에 있으면 제거한다.
     this.remove = function (value) {
         const idx = this.elements.indexOf(value);
-        if(idx > -1) delete this.elements[idx];
+        if(idx > -1)  this.elements.splice(idx, 1);
     };
 
     // 1개의 element를 입력 받고, set에 존재여부를 return 한다
